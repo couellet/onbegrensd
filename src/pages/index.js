@@ -13,16 +13,17 @@ const PromoText = styled.h1`
 `
 
 const ObliqueMarking = styled.div`
-  width: 185px;
-  height: 15px;
+  width: 300px;
+  height: 50px;
   background-color: #0ad266;
   transform: rotate(-2deg);
   margin: 0 auto;
   h2 {
     position: absolute;
     top: -30px;
-    font-weight: 400;
-    font-size: 1.6em;
+    left: 10px;
+    font-weight: 500;
+    font-size: 2.5em;
     text-align: center;
     transform: rotate(2deg);
   }
