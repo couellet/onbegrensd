@@ -7,7 +7,7 @@ const Nav = styled.nav`
   display: flex;
   border-top: 10px solid #000;
   justify-content: center;
-  margin-top: 50px;
+  height: 180px;
 
   ul {
     display: flex;

@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import { Location } from '@reach/router'
 
 import Header from '../components/Header'
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Rajdhani', sans-serif;
-    min-height: calc(100vh - 10px);
+    ${'' /* min-height: calc(100vh - 10px); */}
     display: block;
     position: relative;
     border-top: none;
@@ -43,6 +43,13 @@ const GlobalStyle = createGlobalStyle`
   input, textarea, button {
     font-family: inherit;
   }
+
+
+`
+
+const StyledMain = styled.main`
+  min-height: calc(100vh - 389px);
+  padding: 50px 50px 0 50px;
 `
 
 const Layout = ({ children, location }) => (
@@ -82,7 +89,7 @@ const Layout = ({ children, location }) => (
             href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,700"
             rel="stylesheet"
           />
-          <html lang="en" />
+          <html lang="nl" />
         </Helmet>
 
         <Header />
@@ -110,8 +117,7 @@ const Layout = ({ children, location }) => (
             }
           }}
         </Location>
-
-        {children}
+        <StyledMain>{children}</StyledMain>
         <Footer />
         <GlobalStyle />
       </>

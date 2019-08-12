@@ -6,6 +6,8 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import ShopCard from '../components/ShopCard'
 
+import config from '../data/SiteConfig'
+
 const PromoText = styled.h1`
   font-weight: 300;
   font-size: 1.4em;
@@ -37,6 +39,7 @@ const Grid = styled.section`
   padding: 0 300px;
   margin: 100px 0 100px;
 `
+console.log(config.siteSnipcartLang)
 
 const IndexPage = ({ data }) => (
   <Layout>
