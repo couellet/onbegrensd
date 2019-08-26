@@ -45,6 +45,7 @@ module.exports = {
       options: {
         apiKey: config.siteSnipcartKEY,
         autopop: true,
+        language: `https://raw.githubusercontent.com/snipcart/snipcart-localization/master/locales/nl.js`,
       },
     },
     {

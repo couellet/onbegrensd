@@ -10,6 +10,8 @@ import DamesSubNav from './DamesSubNav'
 import HerenSubNav from './HerenSubNav'
 import KidsSubNav from './KidsSubNav'
 
+import nl from '../data/nl'
+
 const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -91,7 +93,6 @@ const Layout = ({ children, location }) => (
           />
           <html lang="nl" />
         </Helmet>
-
         <Header />
         <Location>
           {({ location }) => {
