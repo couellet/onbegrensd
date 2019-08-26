@@ -54,6 +54,10 @@ const StyledMain = styled.main`
   padding: 50px 50px 0 50px;
 `
 
+document.addEventListener('snipcart.ready', () => {
+  window.Snipcart.setLang('nl');
+});
+
 const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
